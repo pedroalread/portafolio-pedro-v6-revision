@@ -1,2 +1,3 @@
-# portafolio-pedro-v6-revision
-Revisión del portafolio profesional con cuatro casos estratégicos y enlaces a Laboratorio y Sala
+# Portafolio V6 — revisión pública separada
+
+Versión de revisión construida a partir del portafolio vigente con cuatro casos de criterio profesional y navegación hacia el Laboratorio y Sala de Decisiones. La página canónica https://pedro-navarrete-portfolio.vercel.app/ se mantiene intacta. Los criterios profesionales son preguntas orientadoras, no reconstrucciones de conversaciones confidenciales ni resultados inventados. No sustituir sin QA y autorización de la versión oficial.
