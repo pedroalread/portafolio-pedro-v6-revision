@@ -1,0 +1,26 @@
+name: QA portafolio V6 revisión
+on:
+  push:
+    paths: ['qa/**','.github/workflows/qa.yml','index.html']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Validar sitio público
+        run: python qa/qa.py
+      - name: Evidencias
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-v6-evidencia
+          path: qa/*.png
